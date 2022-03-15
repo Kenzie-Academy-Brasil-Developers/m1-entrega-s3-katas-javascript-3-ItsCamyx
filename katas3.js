@@ -20,30 +20,33 @@ function kata1() {
   showResults(1, result);
 }
 
-kata1();
-
 function kata2() {
   // implemente o código do kata 2 aqui
+  let result = "";
   showResults(2, result);
 }
 
 function kata3() {
   // implemente o código do kata 3 aqui
+  let result = "";
   showResults(3, result);
 }
 
 function kata4() {
   // implemente o código do kata 4 aqui
+  let result = "";
   showResults(4, result);
 }
 
 function kata5() {
   // implemente o código do kata 5 aqui
+  let result = "";
   showResults(5, result);
 }
 
 function kata6() {
   // implemente o código do kata 6 aqui
+  let result = "";
   showResults(6, result);
 }
 
@@ -64,6 +67,12 @@ function kata9() {
 
 function kata10() {
   // implemente o código do kata 10 aqui
+  let result = "";
+  let newArr = [];
+  for (let i = 0; i < 20; i++) {
+    newArr.push(sampleArray[i]);
+  }
+  result += newArr;
   showResults(10, result);
 }
 
