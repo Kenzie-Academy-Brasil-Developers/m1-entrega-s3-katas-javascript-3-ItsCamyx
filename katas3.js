@@ -51,7 +51,7 @@ function kata4() {
 function kata5() {
   // implemente o código do kata 5 aqui
   let result = "";
-  for (let i = -25; i <= 25; i++) {
+  for (let i = 25; i >= -25; i--) {
     if (i % 2 !== 0) {
       result += i + ", ";
     }
