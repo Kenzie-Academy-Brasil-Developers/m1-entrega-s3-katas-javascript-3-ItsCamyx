@@ -206,20 +206,68 @@ function kata18() {
 
 function kataBonus1() {
   // implemente o código do kata bonus 1 aqui
+  document.getElementById("katabonus1").innerHTML = "";
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement("div");
+    el.classList.add("box");
+    el.style.height = 20 + "px";
+    el.style.width = 100 + "px";
+    document.getElementById("katabonus1").appendChild(el);
+  }
 }
 
 function kataBonus2() {
   // implemente o código do kata bonus 2 aqui
+  document.getElementById("katabonus2").innerHTML = "";
+  let width = 105;
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement("div");
+    el.classList.add("box");
+    el.style.height = 20 + "px";
+    el.style.width = width + "px";
+    width += 5;
+    document.getElementById("katabonus2").appendChild(el);
+  }
 }
 
 function kataBonus3() {
   // implemente o código do kata bonus 3 aqui
+  document.getElementById("katabonus3").innerHTML = "";
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement("div");
+    el.classList.add("box");
+    el.style.height = 20 + "px";
+    el.style.width = sampleArray[i] + "px";
+    document.getElementById("katabonus3").appendChild(el);
+  }
 }
 
 function kataBonus4() {
   // implemente o código do kata bonus 4 aqui
+  document.getElementById("katabonus4").innerHTML = "";
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement("div");
+    el.classList.add("box");
+    el.style.height = 20 + "px";
+    el.style.width = sampleArray[i] + "px";
+    if (i % 2 !== 0) {
+      el.style.backgroundColor = "red";
+    }
+    document.getElementById("katabonus4").appendChild(el);
+  }
 }
 
 function kataBonus5() {
   // implemente o código do kata bonus 5 aqui
+  document.getElementById("katabonus5").innerHTML = "";
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement("div");
+    el.classList.add("box");
+    el.style.height = 20 + "px";
+    el.style.width = sampleArray[i] + "px";
+    if (sampleArray[i] % 2 == 0) {
+      el.style.backgroundColor = "red";
+    }
+    document.getElementById("katabonus5").appendChild(el);
+  }
 }
